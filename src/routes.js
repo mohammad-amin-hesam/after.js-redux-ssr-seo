@@ -20,14 +20,5 @@ export default [
       loader: () => import(/* webpackChunkName: "About" */ "./About"),
       Placeholder: () => <div>...LOADING...</div>
     })
-  },
-  {
-    name: "Details",
-    path: "/seo",
-    exact: true,
-    component: asyncComponent({
-      loader: () => import(/* webpackChunkName: "Details" */ "./Details"),
-      Placeholder: () => <div>...LOADING...</div>
-    })
   }
 ];

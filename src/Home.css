@@ -1,6 +1,7 @@
 .Home {
   text-align: center;
 }
+
 .Home-logo {
   animation: logo-spin infinite 20s linear;
   height: 80px;
@@ -21,7 +22,7 @@
   list-style: none;
 }
 
-.Home-resources > li {
+.Home-resources>li {
   display: inline-block;
   padding: 1rem;
 }
@@ -30,7 +31,25 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.list-container {
+  list-style-type: none;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0;
+}
+
+.list-container li {
+  text-align: center;
+  margin: 0 auto;
+  color: #444;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 15px;
+  margin-bottom: 15px;
 }
