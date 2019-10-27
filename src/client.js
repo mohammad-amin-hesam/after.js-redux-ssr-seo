@@ -19,7 +19,7 @@ ensureReady(routes).then(data =>
   hydrate(
     <Provider store={store}>
       <BrowserRouter>
-        <After data={data} routes={routes} />
+        <After data={data} routes={routes} store={store} />
       </BrowserRouter>
     </Provider>,
     document.getElementById("root")
