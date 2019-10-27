@@ -6,7 +6,7 @@ import { Provider } from "react-redux";
 import { renderToString } from "react-dom/server";
 
 import createStore from "./helpers/createStore";
-import Html from "./helpers/Html";
+import Document from "./helpers/Document";
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 
@@ -32,7 +32,7 @@ server
         res,
         routes,
         assets,
-        document: Html,
+        document: Document,
         customRenderer,
         store
       });
