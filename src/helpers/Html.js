@@ -42,7 +42,7 @@ class Document extends React.Component {
         <body {...bodyAttrs}>
           <AfterRoot />
           <AfterData data={data} />
-          <script>{`window.INITIAL_STATE = ${serialize(serverState)}`}</script>
+          <script dangerouslySetInnerHTML={{__html: `window.INITIAL_STATE = ${serialize(serverState)}` }}></script>
           <script
             type="text/javascript"
             src={assets.client.js}
