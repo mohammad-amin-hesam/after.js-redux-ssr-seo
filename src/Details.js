@@ -4,16 +4,9 @@ import { fetchTest } from "./actions";
 import { Helmet } from "react-helmet";
 
 const Details = props => {
-  useEffect(() => {
-    props.fetchTest();
-    window.addEventListener("clicl", click);
-    return () => window.removeEventListener("click", click, false);
-  }, []);
 
   const item = props.posts;
-
-  const click = () => console.log("click");
-
+  
   return (
     <>
       <Helmet>
@@ -61,6 +54,7 @@ const Details = props => {
 //5aec579ba6f4527bd700d658
 
 Details.getInitialProps = async ({ store }) => {
+  console.log(store.getState())
   await store.dispatch(fetchTest());
 };
 
