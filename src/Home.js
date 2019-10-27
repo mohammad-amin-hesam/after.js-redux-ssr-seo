@@ -7,7 +7,6 @@ import { connect } from "react-redux";
 import { fetchTest } from "./actions";
 
 const Home = props => {
-  console.log(props.posts);
   const renderList = () => {
     return props.posts.map(post => {
       return <li key={post.id}>{post.title}</li>;
@@ -37,7 +36,8 @@ const Home = props => {
 
 Home.getInitialProps = async ({ store }) => {
   await store.dispatch(fetchTest());
-  console.log(store.getState());
+  // u can get initial states with store.getState()
+  //console.log(store.getState());
 };
 
 const mstp = ({ posts }) => ({ posts });
