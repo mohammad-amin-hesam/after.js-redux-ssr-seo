@@ -12,7 +12,7 @@
     "@jaredpalmer/after": "latest",
     "afterjs-assets": "^1.0.1",
     "axios": "^0.19.0",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "javascript-serialize": "^1.6.1",
     "razzle": "^3.0.0",
     "react": "^16.2.0",
